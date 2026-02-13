@@ -1,0 +1,72 @@
+:root {
+  --color-light-grey: #ced4da;
+  --color-dark-grey: #495057;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fa;
+}
+.accordion {
+  margin: 70px auto;
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+}
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding: 24px;
+  width: 700px;
+}
+.text,
+.number {
+  font-size: clamp(12px, 20px, 24px);
+  font-weight: 500;
+  margin: 0;
+}
+.text-description {
+  line-height: 1.5rem;
+  justify-self: stretch;
+  margin: 0;
+}
+.text-list {
+  line-height: 1.5rem;
+  padding-left: 20px;
+}
+.number--light-grey {
+  color: var(--color-light-grey);
+}
+.text--dark-grey {
+  color: var(--color-dark-grey);
+}
+.dropdown-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.hidden-box {
+  grid-column: 2;
+  display: none;
+}
+.open.item {
+  border-top: 5px solid darkgreen;
+}
+.open .hidden-box {
+  display: block;
+}
+.open .text,
+.open .number {
+  color: green;
+}
+
+@media screen and (max-width: 700px) {
+  .item {
+    width: 100%;
+  }
+}

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Accordion</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <article class="accordion">
+      <section class="item" id="first-section">
+        <p class="number number--light-grey">01</p>
+        <p class="text">Where are these chairs assembled?</p>
+        <button class="dropdown-button" onclick="show('first-section')">
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden-box">
+          <p class="text-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <ul class="text-list text--dark-grey">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="item" id="second-section">
+        <p class="number number--light-grey">02</p>
+        <p class="text">How long do I have to return my chair?</p>
+        <button class="dropdown-button" onclick="show('second-section')">
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </button>
+        <div class="hidden-box">
+          <p class="text-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <ul class="text-list text--dark-grey">
+            <li class="text-list__item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li class="text-list__item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+            <li class="text-list__item">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="item" id="third-section">
+        <p class="number number--light-grey">03</p>
+        <p class="text">Do you ship countries outside the EU?</p>
+        <button class="dropdown-button" onclick="show('third-section')">
+          <svg
+            class="icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+        </button>
+        <div class="hidden-box">
+          <p class="text-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <ul class="text-list text--dark-grey">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </li>
+            <li>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
