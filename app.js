@@ -1,4 +1,4 @@
-function show(element) {
-  const section = document.getElementById(element);
+function show(id) {
+  const section = document.getElementById(id);
   section.classList.toggle("open");
 }
